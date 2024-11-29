@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <div class="container">
+        <form action="submit.html" enctype="multipart/form-data" target="_blank">
+            <div class="form-group">
+                <h4>Let us know how we can improve</h4>
+
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <label for="file-upload"></label>
+                <input type="file" id="file-upload" name="file-upload" accept=".jpg, .png, .pdf">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Which option best describes your current role ?</label>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            
+
+            <div>
+                <label>How likely is that you would recommend this program to a friend ?</label>
+                <div style="display: inline-block;">
+                    <input type="radio" id="definitely" name="recommend" value="Definitely">
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" id="maybe" name="recommend" value="Maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" id="not-sure" name="recommend" value="Not Sure">
+                    <label for="not-sure">Not Sure</label>
+                </div>
+            </div>
+
+            <br>
+            
+
+            <div class="form-group">
+                <label for="preference">What do you like most here ?</label>
+                <select id="preference" name="preference" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Class">Classes</option>
+                    <option value="Teaching">Teaching</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Things that should be improved in the future(check all that apply)</label><br><br>
+                <input type="checkbox" id="frontend" name="improvement" value="Frontend">
+                <label for="frontend">Front-end Projects</label><br>
+                <input type="checkbox" id="backend" name="improvement" value="Backend">
+                <label for="backend">Back-end Projects</label><br>
+                <input type="checkbox" id="dataviz" name="improvement" value="Data Visualization">
+                <label for="dataviz">Data Visualization</label><br>
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <label for="comments">Any Comments or Suggestions ?</label>
+                <textarea>Enter your comment here....</textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-- <body style="background-image:url('image.avif');background-repeat: no-repeat;background-size: cover;background-position: center;">
+    
+    
+
+    <h1 style="color: white;text-align: center;">SURVEY FORM</h1>
+    <div style="width: 400px;height: 500px;background-color: aliceblue;margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;">
+    
+    <form action="submit.html" enctype="multipart/form-data" target="_blank">
+
+    
+    <label>Let us know how we can improve</label><br>
+    <label>Name:</label>
+    <input type="text" required placeholder="Enter the FirstName"><br>
+    <label>Email:</label>
+    <input type="email"><br>
+    <label>Age:</label>
+    <input type="number"><br>
+    <input type="file"><br><br>
+    <label>Which option best describes your current role ?</label>
+    <select>
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Other">Other</option>
+        <option value="" selected disabled>Select</option>
+    </select>
+    <label>How likely is that you would recommend this program to a friend ?</label>
+    <input type="radio" name="gender" value="Definitely">
+    <label>Definitely</label>
+    <input type="radio" name="gender" value="Maybe">
+    <label>Maybe</label>
+    <input type="radio" name="gender" value="Not sure">
+    <label>Not sure</label>
+    <br>
+    <label>What do you like most here ?</label>
+    <select>
+        <option value="Class">Student</option>
+        <option value="Teaching">Teacher</option>
+        <option value="Other">Other</option>
+        <option value="" selected disabled>Select an option</option>
+    </select>
+    <label>Things that should be improved in the future(check all that apply)</label><br>
+    
+    <input type="checkbox">Front-end Projects<br>
+    <input type="checkbox">Back-end Projects<br>
+    <input type="checkbox">Data Visualization<br>
+    
+    <label>Any Comments or Suggestions ?</label><br>
+    <textarea></textarea><br>
+    
+
+    </form>
+
+
+
+
+
+    </div> -->
+
+
+</body>
+</html>
